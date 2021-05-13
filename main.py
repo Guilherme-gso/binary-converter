@@ -17,7 +17,7 @@ def get_binary_alphabet():
 
   xpath = '//figure[@class="wp-block-table is-style-stripes"]/table'
   elements = driver.find_elements_by_xpath(xpath)
-
+  
   for idx in range(len(elements)):
     element = elements[idx]
     html = element.get_attribute('outerHTML')
